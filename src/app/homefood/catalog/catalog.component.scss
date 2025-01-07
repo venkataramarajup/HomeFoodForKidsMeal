@@ -1,0 +1,95 @@
+
+.conatiner {
+  margin: 0 8rem;
+  margin-top: 110px;
+  padding: 10px;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: justify;
+}
+.card{
+    margin: 1rem 0;
+    width: 18rem;
+    display: flex;
+}
+
+.fonticon {
+    font-size: 2rem; 
+    align-self: center; 
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+.card-img-top {
+    height: 250px;
+}
+@media (max-width: 768px) {
+    .card {
+      min-width: 150px;
+    }
+    .card-img-top {
+      height: 150px;
+    }
+  }
+
+// .carousel-inner {
+//     display: flex;
+//     justify-content: center;
+//   }
+  
+//   .carousel-item {
+//     display: flex;
+//     justify-content: center;
+//   }
+  
+//   .card {
+//     margin: 0 auto;
+//   }
+
+/* Change the color of the previous icon */
+// .carousel-control-prev-icon {
+//     background-color: #02534d; /* Set the color you want */
+//     border-radius: 50%; /* Optional: makes the background circular */
+//   }
+  
+//   /* Change the color of the next icon */
+//   .carousel-control-next-icon {
+//     background-color: #02534d; /* Set the color you want */
+//     border-radius: 50%; /* Optional: makes the background circular */
+//   }
+  
+//   /* Change the icon color when hovered */
+//   .carousel-control-prev-icon:hover,
+//   .carousel-control-next-icon:hover {
+//     background-color: #013633; /* Color on hover */
+//   }
+
+
+@media (max-width: 1200px) {
+  .conatiner {
+      margin: 0 5rem;
+      margin-top: 110px;
+  }
+}
+// @media (max-width: 992px) {
+//     .title > p {
+//         margin: 0 5rem;
+//     }
+// }
+@media (max-width: 768px) {
+  .conatiner {
+      margin: 0 2rem;
+      margin-top: 110px;
+  }
+}
+@media (max-width: 576px) {
+  .conatiner {
+      margin: 0 1rem;
+      margin-top: 110px;
+  }
+}
+

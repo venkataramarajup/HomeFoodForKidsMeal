@@ -1,0 +1,109 @@
+.content {
+    margin-top: 110px;
+    padding: 10px;
+}
+.conatiner {
+    margin: 0 8rem;
+}
+.title > .visionandmission {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", serif;
+}
+.title > p {
+    font-family: "Cormorant Garamond", serif;
+    
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title > hr {
+    margin: 2rem 0rem; /* Example margin for hr */
+    border: none; /* Optional: style adjustment */
+    border-top: 1px solid #ccc; /* Example for a styled horizontal rule */
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) { /* For tablets and smaller devices */
+    .title > .visionandmission {
+        font-size: 2.5rem;
+    }
+    .title > p {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) { /* For mobile phones */
+    .title > .visionandmission {
+        font-size: 2rem;
+    }
+    .title > p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
+
+// @media (min-width: 1201px) {
+//     .title > p {
+//         margin: 0 20rem;
+//     }
+// }
+@media (max-width: 1200px) {
+    .conatiner {
+        margin: 0 5rem;
+    }
+    .title > hr {
+        margin: 2rem 0; /* Example margin for hr */
+    }
+}
+// @media (max-width: 992px) {
+//     .title > p {
+//         margin: 0 5rem;
+//     }
+// }
+@media (max-width: 768px) {
+    .conatiner {
+        margin: 0 2rem;
+    }
+    .title > hr {
+        margin: 2rem 0rem; /* Example margin for hr */
+    }
+}
+@media (max-width: 576px) {
+    .conatiner {
+        margin: 0 1rem;
+    }
+    .title > hr {
+        margin: 2rem 0rem; /* Example margin for hr */
+    }
+}
+
+.card{
+    margin: 1rem 0;
+    width: 18rem;
+    display: flex;
+}
+
+.fonticon {
+    font-size: 2rem; 
+    align-self: center; 
+    position: relative; 
+    top: 40%; 
+    transform: translateY(-50%);
+}
+.card-img-top {
+    height: 250px;
+}
+@media (max-width: 768px) {
+    .card {
+      min-width: 150px;
+    }
+    .card-img-top {
+      height: 150px;
+    }
+  }

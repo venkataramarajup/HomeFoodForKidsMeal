@@ -1,0 +1,43 @@
+
+
+<div class="content">
+  <div class="conatiner">
+    <div class="row mx-0 my-0 mb-4">
+      <div class="col-sm-12 col-md-12 col-12">
+        <div class="mission">
+          <div class="title col-12 text-center">
+            <div class="visionandmission">Our Mission & Vision</div>
+            <p class="quote">
+              "Our mission is to deliver fresh, hygienic, and wholesome meals made with love and care, just like home. We aim to
+              simplify parents’ lives by offering convenient and eco-friendly meal solutions that support children’s physical and
+              mental development while promoting sustainability through the use of eco-conscious practices."
+            </p>
+            <hr class="horizontal-line">
+            <p class="quote">
+              "Our vision is to create a future where every child has access to fresh, nutritious, and delicious meals that promote healthy growth and lifelong well-being. We envision being the preferred choice for parents seeking wholesome, home-style meals for their children, known for our commitment to quality, care, and eco-consciousness. By nurturing healthy eating habits from an early age, we aspire to contribute to a healthier, happier, and more sustainable world for the next generation."
+            </p>
+          
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="d-flex flex-row flex-nowrap overflow-auto">
+    <div class="card px-0 py-0 mx-2" *ngFor="let item of foodArray" style="min-width: 200px;">
+      <img class="card-img-top" [src]="item.image" alt="Card image cap" style="object-fit: cover;">
+      <div class="card-body pr-1">
+        <h5 class="card-title text-center">
+          <u class="text-decoration-underline" style="cursor: pointer;" (click)="openpopup(item)">{{item.name}}</u>
+        </h5>
+      </div>
+    </div>
+    <div class="icon">
+      <i class="bi bi-arrow-right-circle fonticon" (click)="redirectToCatalogpage()"></i>
+    </div>
+  </div>
+  <!-- <div class="content">
+    <app-catalog [vegetablesList]=vegitablesArray></app-catalog>
+
+  </div> -->
+</div>
+</div>

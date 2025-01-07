@@ -1,0 +1,21 @@
+<div class="conatiner">
+  <div class="header">Benifits from Vegetables for Kids.</div>
+  <div class="row">
+    <div class="card px-0 py-0 mx-2" *ngFor="let item of vegetablesList">
+      <img class="card-img-top" [src]="item.image" alt="Card image cap" style="object-fit: cover;">
+      <div class="card-body pr-1">
+        <h5 class="card-title text-center">
+          <u class="text-decoration-underline" style="cursor: pointer;" (click)="openpopup(item)">{{item.name}}</u>
+        </h5>
+      </div>
+    </div>
+    <!-- <div class="icon">
+      <i class="bi bi-arrow-right-circle fonticon" (click)="redirectToCatalogpage()"></i>
+    </div> -->
+  </div>
+  
+</div>
+
+<div *ngIf="openpopumodel">
+  <app-popup-model [vegetable]="selectedVegitable" (closemodal)="closepopup($event)"></app-popup-model>
+</div>
