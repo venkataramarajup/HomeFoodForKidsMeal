@@ -41,3 +41,7 @@
   </div> -->
 </div>
 </div>
+
+<div *ngIf="openpopumodel">
+  <app-popup-model [vegetable]="selectedVegitable" (closemodal)="closepopup($event)"></app-popup-model>
+</div>

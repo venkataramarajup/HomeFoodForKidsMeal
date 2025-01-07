@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CatalogComponent } from "./catalog/catalog.component";
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { PopupModelComponent } from './popup-model/popup-model.component';
 
 @Component({
   selector: 'app-homefood',
   standalone: true,
-  imports: [CatalogComponent, CommonModule],
+  imports: [ CommonModule,PopupModelComponent],
   templateUrl: './homefood.component.html',
   styleUrl: './homefood.component.scss'
 })
